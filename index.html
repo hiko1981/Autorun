@@ -1,1 +1,234 @@
-siden er klar
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Fantastisk - Velkommen</title>
+    <style>
+        /* Grundlæggende styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Container til at centrere indhold */
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 0 20px;
+        }
+
+        /* Header / Hoved */
+        header {
+            background: #333;
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #0779e4 3px solid;
+        }
+
+        header a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+
+        header ul {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            float: right;
+        }
+
+        header li {
+            display: inline;
+            padding: 0 20px 0 20px;
+        }
+
+        header #branding {
+            float: left;
+        }
+
+        header #branding h1 {
+            margin: 0;
+        }
+
+        /* Hero / Velkomstsektion */
+        .hero {
+            min-height: 400px;
+            background: url('https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=2070&auto=format&fit=crop') no-repeat center center/cover;
+            text-align: center;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hero h1 {
+            font-size: 55px;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px #000;
+        }
+
+        .hero p {
+            font-size: 20px;
+            text-shadow: 1px 1px 2px #000;
+        }
+        
+        .hero .button {
+            font-size: 18px;
+            text-decoration: none;
+            color: #fff;
+            background: #e8491d;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        /* Sektioner */
+        section {
+            padding: 40px 0;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 32px;
+            margin-bottom: 30px;
+        }
+
+        /* Værelser sektion */
+        .rooms-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .room-card {
+            background: #fff;
+            border: 1px solid #ddd;
+            text-align: center;
+            padding-bottom: 20px;
+        }
+        .room-card img {
+            width: 100%;
+            height: auto;
+        }
+        .room-card h3 {
+            margin: 15px 0;
+        }
+        .room-card p {
+            padding: 0 15px;
+        }
+
+        /* Kontaktformular */
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        form input, form textarea, form button {
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        form button {
+            background: #333;
+            color: #fff;
+            cursor: pointer;
+            border: 0;
+        }
+        form button:hover {
+            background: #e8491d;
+        }
+
+        /* Footer / Sidefod */
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 30px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1><a href="index.html">🏨 Hotel Fantastisk</a></h1>
+            </div>
+            <nav>
+                <ul>
+                    <li class="current"><a href="#">Hjem</a></li>
+                    <li><a href="#about">Om Os</a></li>
+                    <li><a href="#rooms">Værelser</a></li>
+                    <li><a href="#contact">Kontakt & Booking</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <h1>Velkommen til dit andet hjem</h1>
+        <p>Oplev luksus og komfort i hjertet af byen</p>
+        <a href="#contact" class="button">Book dit ophold nu</a>
+    </section>
+
+    <section id="about" class="container">
+        <h2 class="section-title">Om Hotel Fantastisk</h2>
+        <p>Hotel Fantastisk er mere end bare et sted at sove. Vi tilbyder en uforglemmelig oplevelse med førsteklasses service, moderne faciliteter og en central beliggenhed. Vores mission er at gøre dit ophold så behageligt og mindeværdigt som muligt, uanset om du er her for forretning eller fornøjelse.</p>
+    </section>
+
+    <section id="rooms" class="container">
+        <h2 class="section-title">Vores Værelser</h2>
+        <div class="rooms-grid">
+            <div class="room-card">
+                <img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?q=80&w=2070&auto=format&fit=crop" alt="Standard værelse">
+                <h3>Standard Værelse</h3>
+                <p>Perfekt til den rejsende, der ønsker komfort og funktionalitet. Udstyret med en behagelig seng, skrivebord og gratis Wi-Fi.</p>
+            </div>
+            <div class="room-card">
+                <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?q=80&w=2070&auto=format&fit=crop" alt="Deluxe værelse">
+                <h3>Deluxe Værelse</h3>
+                <p>Mere plads og luksus. Nyd en kingsize-seng, et hyggeligt siddeområde og en fantastisk udsigt over byen.</p>
+            </div>
+            <div class="room-card">
+                <img src="https://images.unsplash.com/photo-1590490359854-dfba595a8537?q=80&w=1974&auto=format&fit=crop" alt="Suite">
+                <h3>Suite</h3>
+                <p>Den ultimative oplevelse. Vores suiter har separat soveværelse og opholdsstue, minibar og adgang til vores eksklusive lounge.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="container">
+        <h2 class="section-title">Kontakt & Booking</h2>
+        <p style="text-align:center;">Udfyld formularen nedenfor for at sende os en forespørgsel. Vi vender tilbage hurtigst muligt.</p>
+        <form>
+            <label for="name">Navn:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Besked (inkl. ønskede datoer):</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            
+            <button type="submit">Send Forespørgsel</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>Hotel Fantastisk &copy; 2025</p>
+    </footer>
+
+</body>
+</html>
+p
